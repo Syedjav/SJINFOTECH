@@ -1,0 +1,21 @@
+{
+  "name": "sjinfotech-site",
+  "version": "1.0.0",
+  "description": "Static site with a simple contact API for development",
+  "main": "server.js",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-rate-limit": "^6.7.0",
+    "morgan": "^1.10.0",
+    "nodemailer": "^7.0.0",
+    "rotating-file-stream": "^3.1.0",
+    "winston": "^3.9.0",
+    "winston-daily-rotate-file": "^5.0.1"
+  }
+}
