@@ -121,7 +121,7 @@ const contactLimiter = rateLimit({
 // Simple contact API with rate limiting and logging
 app.get('/healthz', (req, res) => res.json({ status: 'ok' }));
 app.get(['/', '/Untitled-1.html'], (req, res) => {
-  res.sendFile(path.join(__dirname, 'Untitled-1.html'));
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 app.post('/api/contact', contactLimiter, async (req, res) => {
